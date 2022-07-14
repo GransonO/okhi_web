@@ -4,9 +4,12 @@
         
         <input type="button" value="Open Tecno Protected Page"  onClick="openTecnoProtectedIntent('com.transsion.phonemaster', 'com.cyin.himgr.widget.activity.MainSettingGpActivity')" />
         
+        <input type="button" value="Reload web Page"  onClick="reload()" />
+        
         <script type="text/javascript">
             function openTecnoProtectedIntent(pkgName, className) {
                 Android.openTecnoProtectedIntent(pkgName, className);
+                Android.reload(pkgName, className);
             }
         </script>
         </div>
