@@ -20,7 +20,7 @@
                 <br/>
                 <br/>
                 <br/>
-                <input type="button" style="background:rgb(14, 111, 111); color:aliceblue; border-radius: 20px; border: 1px solid powderblue; padding: 15px;" value="GPS Toggle"  onClick="buttonSwitchGPS_ON()" />
+                <input type="button" style="background:rgb(14, 111, 111); color:aliceblue; border-radius: 20px; border: 1px solid powderblue; padding: 15px;" value="GPS Toggle"  onClick="switchGPS()" />
                 <br/>
                 <br/>
                 <br/>
@@ -32,8 +32,14 @@
         <script type="text/javascript">
             function openTecnoProtectedIntent(pkgName, className) {
                 Android.openTecnoProtectedIntent(pkgName, className);
-                Android.reload(pkgName, className);
-                Android.buttonSwitchGPS_ON()
+            }
+
+            function switchGPS(){
+                Android.switchGPS();
+            }
+
+            function reload(){
+                Android.reload();
             }
         </script>
     </body>
